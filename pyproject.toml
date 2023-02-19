@@ -13,4 +13,3 @@ flask = "^2.2.3"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-

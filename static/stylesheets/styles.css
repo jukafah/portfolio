@@ -1,0 +1,17 @@
+@font-face {
+    src: url("../fontpacks/upheavtt.ttf");
+    font-family: Upheaval;
+}
+
+body {
+    font-family: Upheaval;
+}
+
+.container {
+    padding-top: 225px;
+}
+
+.corporate-logo {
+    max-width: 125px;
+    max-height: 125px;
+}
