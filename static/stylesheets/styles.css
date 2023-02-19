@@ -3,15 +3,67 @@
     font-family: Upheaval;
 }
 
+:root {
+    --light-shade: #E2E1D7;
+    --light-accent: #7681A1;
+    --main-brand: #E13240;
+    --dark-accent: #1B2F4B;
+    --dark-shade: #1E1C26;
+    --dark-secondary: #0B0B0C;
+}
+
 body {
     font-family: Upheaval;
 }
 
 .container {
-    padding-top: 225px;
+    padding-top: 125px;
+    padding-bottom: 125px;
 }
 
-.corporate-logo {
+.experience-logo {
     max-width: 125px;
     max-height: 125px;
 }
+
+.skills-logo {
+    max-height: 80px;
+}
+
+
+.quotes-section {
+    background-color: var(--dark-shade);
+}
+
+.bg-shade {
+    background-color: var(--dark-secondary);
+}
+
+.bg-accent {
+    background-color: var(--dark-accent);
+}
+
+
+
+
+
+/*
+colors
+
+primary - #e03442
+info - #1e1c26
+success - #788a4c
+warning - #f67a14
+danger - #f44336
+light - #E2E1D7
+dark-shades - #1E1C26
+
+light-accent - #7681A1
+main-brand - #E13240
+dark-accent - #1B2F4B
+
+
+use for background
+
+
+ */
