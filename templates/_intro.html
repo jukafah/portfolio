@@ -1,8 +1,8 @@
-<div class="container px-5">
+<div class="container">
       <div class="text-center">
-          <h1 class="pb-5">LET ME INTRODUCE MYSELF</h1>
+          <h1 class="pb-5 main-brand">LET ME INTRODUCE MYSELF</h1>
       </div>
-      <div class="row">
+      <div class="row align-items-center">
           <div class="col-sm fs-4">
               <p>
                   I'm a software engineer with experience in full stack development utilizing various frameworks and languages. I do contract work, full time employment, and develop my own projects! Oh, and did I mention I love hot sauce?
@@ -11,13 +11,12 @@
                   This site serves as a collection of my experience and skills. Check out some details over on the right.
               </p>
 
-              <!-- need a really cool right arrow for this part -->
           </div>
 
-          <!-- skills section???? this could be like a whole game menu, lolololol!-->
+          <!-- skills section???? this could be like a whole game menu!-->
 
-          <div class="col-sm">
-              <div class="col text-center">
+          <div class="col-sm text-center modes">
+
                   <h2 class="pb-3">SELECT MODE</h2>
                   <ul class="nav nav-pills mb-3 d-inline-flex gap-3 fs-5" id="pills-tab" role="tablist">
                       <li class="nav-item" role="presentation">
@@ -40,78 +39,90 @@
                   <div class="tab-content my-4" id="pills-tabContent">
                       <!-- make them all dim and highligh on hover? -->
                       <div class="tab-pane fade show active" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab" tabindex="0">
-                          <div class="hstack justify-content-evenly">
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/atvi.png') }}" alt="Activision">
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/cmg.svg') }}" alt="Cox Media Group">
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/icario.svg') }}" alt="Icario">
-                          </div>
+                          <div class="row">
+                              <div class="col-sm">
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/ribbon.svg') }}" alt="Ribbon Home">
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/atvi.svg') }}" alt="Activision">
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/cmg.svg') }}" alt="Cox Media Group">
 
-                          <div class="hstack justify-content-evenly">
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/meraki.png') }}" alt="Cisco Meraki">
-                              <!-- or should I use gracenote more specifically?? -->
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/nielsen.png') }}" alt="Nielsen">
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/ocas.png') }}" alt="Ontario College Application Service">
-                          </div>
 
-                          <div class="hstack justify-content-evenly">
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/ofw.jpeg') }}" alt="Our Family Wizard">
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/ribbon.svg') }}" alt="Ribbon Home">
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/spok.png') }}" alt="Spok">
+                              </div>
+                              <div class="col-sm">
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/meraki.svg') }}" alt="Cisco Meraki">
+                                  <!-- or should I use gracenote more specifically?? -->
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/nielsen.svg') }}" alt="Nielsen">
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/tapqa.svg') }}" alt="tapQA">
+                              </div>
+                              <div class="col-sm">
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/icario.svg') }}" alt="Icario">
+                                  <img class="experience-logo m-2" src="{{ url_for('static',  filename='images/experiences/taylor.svg') }}" alt="Taylor Digital">
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/spok.svg') }}" alt="Spok">
+                              </div>
+                              <div class="col-sm">
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/ofw.svg') }}" alt="Our Family Wizard">
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/target.svg') }}" alt="Target">
+                                  <img class="experience-logo m-2" src="{{ url_for('static', filename='images/experiences/ocas.svg') }}" alt="Ontario College Application Service">
+                              </div>
                           </div>
-
-                          <div class="hstack justify-content-evenly">
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/tapqa.jpeg') }}" alt="tapQA">
-                              <img class="experience-logo" src="{{ url_for('static', filename='images/target.png') }}" alt="Target">
-                              <img class="experience-logo" src="{{ url_for('static',  filename='images/taylor.jpeg') }}" alt="Taylor Digital">
-                          </div>
-
                           <!-- add some sort of experience bar?? lol -->
                       </div>
                       <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab" tabindex="0">
-                          <div class="hstack">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/python.svg') }}" alt="Python">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/ruby.svg') }}" alt="Ruby">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/ts.svg') }}" alt="Typescript">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/js.svg') }}" alt="Javascript">
-                          </div>
 
-                          <div class="hstack justify-content-evenly">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/django.svg') }}" alt="Django">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/rails.svg') }}" alt="Rails">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/flask.svg') }}" alt="Flask">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/fastapi.svg') }}" alt="FastAPI">
-                          </div>
 
-                          <div class="hstack justify-content-evenly">
 
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/postgresql.svg') }}" alt="Postgresql">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/mongodb.svg') }}" alt="MongoDB">
+{##}
 
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/github.svg') }}" alt="Github">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/bitbucket.svg') }}" alt="Bitbucket">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/jenkins.svg') }}" alt="Jenkins">
-                          </div>
+{##}
 
-                          <div class="hstack justify-content-evenly">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/bootstrap.svg') }}" alt="Bootstrap">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/react.svg') }}" alt="React">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/jinja.svg') }}" alt="Jinja">
-                          </div>
+{##}
+{#                          <!-- test related stuff -->#}
+{#                          <div class="hstack justify-content-evenly">#}
+{#                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/cypress.svg') }}" alt="Cypress">#}
+{#                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/pytest.svg') }}" alt="Pytest">#}
+{##}
+{#                              <!-- replacement for rspec? -->#}
+{#                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/rspec.svg') }}" alt="Rspec">#}
+{#                              <img class="skills-logo" src="{{ url_for('static', filename='images/jest.png') }}" alt="Jest">#}
+{#                          </div>#}
 
-                          <!-- test related stuff -->
-                          <div class="hstack justify-content-evenly">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/cypress.svg') }}" alt="Cypress">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/pytest.svg') }}" alt="Pytest">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/rspec.svg') }}" alt="Rspec">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/jest.png') }}" alt="Jest">
-                          </div>
+                          <div class="row">
+                              <!-- maybe read these frome a yaml instead -->
+                              <!-- languages -->
+                              <div class="col-sm">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/python.svg') }}" alt="Python">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/ruby.svg') }}" alt="Ruby">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/ts.svg') }}" alt="Typescript">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/js.svg') }}" alt="Javascript">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/googlecloud.svg') }}" alt="Google Cloud">
+                              </div>
 
-                          <!-- deployment related -->
-                          <div class="hstack justify-content-evenly">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/docker.svg') }}" alt="Docker">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/digitalocean.svg') }}" alt="Digital Ocean">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/googlecloud.svg') }}" alt="Google Cloud">
-                              <img class="skills-logo" src="{{ url_for('static', filename='images/skills/aws.svg') }}" alt="Amazon Web Services">
+                              <!-- frameworks -->
+                              <div class="col-sm">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/django.svg') }}" alt="Django">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/rails.svg') }}" alt="Rails">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/flask.svg') }}" alt="Flask">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/fastapi.svg') }}" alt="FastAPI">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/docker.svg') }}" alt="Docker">
+                              </div>
+
+                              <!-- front end -->
+                              <div class="col-sm">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/bootstrap.svg') }}" alt="Bootstrap">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/react.svg') }}" alt="React">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/jinja.svg') }}" alt="Jinja">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/digitalocean.svg') }}" alt="Digital Ocean">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/aws.svg') }}" alt="Amazon Web Services">
+                              </div>
+
+
+
+                              <div class="col-sm">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/postgresql.svg') }}" alt="Postgresql">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/mongodb.svg') }}" alt="MongoDB">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/github.svg') }}" alt="Github">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/bitbucket.svg') }}" alt="Bitbucket">
+                                  <img class="skills-logo m-2" src="{{ url_for('static', filename='images/skills/jenkins.svg') }}" alt="Jenkins">
+                              </div>
 
                           </div>
                       </div>
@@ -128,7 +139,7 @@
                       -->
 
                   </div>
-              </div>
+
           </div>
       </div>
   </div>

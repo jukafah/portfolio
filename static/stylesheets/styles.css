@@ -1,5 +1,11 @@
 @font-face {
-    src: url("../fontpacks/upheavtt.ttf");
+    /*src: url("../fontpacks/upheavtt.ttf");*/
+
+
+    src: url("../fontpacks/Retro Gaming.ttf");
+    /*src: url("../fontpacks/alagard.ttf");*/
+
+    /*src: url("../fontpacks/04B_30__.ttf");*/
     font-family: Upheaval;
 }
 
@@ -22,17 +28,30 @@ body {
 }
 
 .experience-logo {
-    max-width: 125px;
-    max-height: 125px;
+    height: 115px;
+    width: 115px;
 }
 
 .skills-logo {
-    max-height: 80px;
+    height: 64px;
 }
 
 
+.modes {
+    /*max-height: 750px;*/
+    height: 575px;
+}
+
 .quotes-section {
     background-color: var(--dark-shade);
+}
+
+.main-brand {
+    color: var(--main-brand);
+}
+
+.dark-accent {
+    color: var(--dark-accent);
 }
 
 .bg-shade {
