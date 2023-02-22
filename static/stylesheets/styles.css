@@ -54,6 +54,10 @@ body {
     color: var(--dark-accent);
 }
 
+.bg-light-shade {
+    background-color: var(--light-shade);
+}
+
 .bg-shade {
     background-color: var(--dark-secondary);
 }
@@ -62,6 +66,15 @@ body {
     background-color: var(--dark-accent);
 }
 
+.bg-bubble {
+    background: url("../images/chat-bubble-1.svg") no-repeat;
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 25px;
+}
+
+/*background: center / contain no-repeat url("../../media/examples/firefox-logo.svg"),*/
+            /*#eee 35% url("../../media/examples/lizard.png");*/
 
 /*
 colors
