@@ -6,20 +6,27 @@
     /*src: url("../fontpacks/alagard.ttf");*/
 
     /*src: url("../fontpacks/04B_30__.ttf");*/
-    font-family: Upheaval;
+    font-family: RetroGaming;
 }
+
+/*
+from logo
+sauce: e63746
+background: 1d3557
+
+ */
 
 :root {
     --light-shade: #E2E1D7;
     --light-accent: #7681A1;
-    --main-brand: #E13240;
-    --dark-accent: #1B2F4B;
+    --main-brand: #e63746;
+    --dark-accent: #1d3557;
     --dark-shade: #1E1C26;
     --dark-secondary: #0B0B0C;
 }
 
 body {
-    font-family: Upheaval;
+    font-family: RetroGaming;
 }
 
 .container {
@@ -58,11 +65,11 @@ body {
     background-color: var(--light-shade);
 }
 
-.bg-shade {
-    background-color: var(--dark-secondary);
+.bg-dark-shade {
+    background-color: var(--dark-shade);
 }
 
-.bg-accent {
+.bg-dark-accent {
     background-color: var(--dark-accent);
 }
 
@@ -72,6 +79,10 @@ body {
     padding-top: 50px;
     padding-left: 25px;
 }
+
+/*.navbar-brand {*/
+/*    fill: var(--)*/
+/*}*/
 
 /*background: center / contain no-repeat url("../../media/examples/firefox-logo.svg"),*/
             /*#eee 35% url("../../media/examples/lizard.png");*/

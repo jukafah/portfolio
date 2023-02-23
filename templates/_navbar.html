@@ -1,16 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 fs-2">
-      <!-- maybe add hotsauce logo here -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-shade fs-4 sticky-top">
       <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="{{ url_for('static', filename='images/hotsauce.svg') }}" width="64" height="64" alt="Hot Sauce">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <!-- right align the navbar content -->
-          <div class="collapse navbar-collapse d-flex" id="navbarNav">
-              <div class="navbar-nav">
-                  <a class="nav-link disabled">PORTFOLIO</a>
-                  <a class="nav-link disabled">ABOUT</a>
-                  <a class="nav-link disabled">CONTACT</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav ms-auto">
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#quotes">Quotes</a>
+                  <a class="nav-link" href="#contact">Contact</a>
               </div>
           </div>
       </div>
   </nav>
+
+
