@@ -96,6 +96,15 @@ body {
     color: green;
 }
 
+.social-link {
+    color: var(--light-accent);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: var(--dark-accent);
+}
+
 /*.navbar-brand {*/
 /*    fill: var(--)*/
 /*}*/
