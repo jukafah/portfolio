@@ -9,13 +9,6 @@
     font-family: RetroGaming;
 }
 
-/*
-from logo
-sauce: e63746
-background: 1d3557
-
- */
-
 :root {
     --light-shade: #E2E1D7;
     --light-accent: #7681A1;
@@ -34,45 +27,21 @@ body {
     padding-bottom: 125px;
 }
 
-.experience-logo {
-    height: 115px;
-    width: 115px;
-}
-
-.skills-logo {
-    height: 64px;
-}
-
-
-.modes {
-    /*max-height: 750px;*/
-    height: 575px;
-}
-
-.quotes-section {
-    background-color: var(--dark-shade);
-}
-
 .main-brand {
     color: var(--main-brand);
 }
-
 .dark-accent {
     color: var(--dark-accent);
 }
-
 .bg-light-shade {
     background-color: var(--light-shade);
 }
-
 .bg-dark-shade {
     background-color: var(--dark-shade);
 }
-
 .bg-dark-accent {
     background-color: var(--dark-accent);
 }
-
 .bg-bubble {
     background: url("../images/chat-bubble-1.svg") no-repeat;
     height: 300px;
@@ -105,30 +74,23 @@ body {
     color: var(--dark-accent);
 }
 
-/*.navbar-brand {*/
-/*    fill: var(--)*/
-/*}*/
+.work-history-row > .col {
+    padding-bottom: 25px;
+    max-width: 250px;
+}
 
-/*background: center / contain no-repeat url("../../media/examples/firefox-logo.svg"),*/
-            /*#eee 35% url("../../media/examples/lizard.png");*/
-
-/*
-colors
-
-primary - #e03442
-info - #1e1c26
-success - #788a4c
-warning - #f67a14
-danger - #f44336
-light - #E2E1D7
-dark-shades - #1E1C26
-
-light-accent - #7681A1
-main-brand - #E13240
-dark-accent - #1B2F4B
+.work-history-img:hover {
+    background-color: lightgray;
+}
+.work-history-img {
+    height: 125px;
+    width: 175px;
+    background-color: var(--light-shade);
+    padding: 25px;
+    transition: background-color 1s ease;
+}
 
 
-use for background
 
 
- */
+
