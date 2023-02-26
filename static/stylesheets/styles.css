@@ -33,6 +33,9 @@ body {
 .dark-accent {
     color: var(--dark-accent);
 }
+.light-accent {
+    color: var(--light-accent);
+}
 .bg-light-shade {
     background-color: var(--light-shade);
 }
@@ -89,6 +92,46 @@ body {
     padding: 25px;
     transition: background-color 1s ease;
 }
+
+.tab-header {
+    color: var(--dark-accent);
+    border-bottom: solid;
+    border-bottom-color: var(--dark-accent);
+    border-bottom-width: 2px;
+    max-width: 175px;
+    text-transform: uppercase;
+}
+
+.text-bg-dark-accent {
+    background-color: var(--dark-accent);
+}
+
+.pixel-pill svg #inside {
+    color: var(--light-accent);
+}
+
+.pixel-pill svg #border {
+    color: var(--dark-accent);
+}
+
+.pixel-pill #pixelpill #shine {
+    color: var(--light-shade);
+}
+
+
+
+/*.pixel-pill {*/
+/*    background: url("../images/pixelpill.svg");*/
+/*    fill: lightgray;*/
+/*    color: lightgray;*/
+/*}*/
+
+/*.character-sheet {*/
+/*    background-image: url("../images/bg-parchment.svg");*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
 
 
 
