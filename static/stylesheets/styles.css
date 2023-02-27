@@ -102,6 +102,9 @@ body {
     text-transform: uppercase;
 }
 
+.badge {
+    margin: 5px;
+}
 .text-bg-dark-accent {
     background-color: var(--dark-accent);
 }
