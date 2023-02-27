@@ -26,6 +26,9 @@ body {
     padding-top: 125px;
     padding-bottom: 125px;
 }
+.text-small {
+    font-size: 14px;
+}
 
 .main-brand {
     color: var(--main-brand);
