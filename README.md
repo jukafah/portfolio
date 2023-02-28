@@ -2,4 +2,4 @@
 
 Simple portfolio website built with Poetry, Flask, Bootstrap 5, and deployed on Digital Ocean.
 
-Accessible at iamsteve.dev
+Accessible [here](iamsteve.dev)
