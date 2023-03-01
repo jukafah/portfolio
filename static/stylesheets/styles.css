@@ -71,14 +71,7 @@ body {
     color: green;
 }
 
-.social-link {
-    color: var(--light-accent);
-    text-decoration: none;
-}
 
-.social-link:hover {
-    color: var(--dark-accent);
-}
 
 .work-history-row > .col {
     padding-bottom: 25px;
@@ -112,6 +105,10 @@ body {
     background-color: var(--dark-accent);
 }
 
+.pixel-plug {
+    max-width: 475px;
+}
+
 .pixel-pill svg #inside {
     color: var(--light-accent);
 }
@@ -122,6 +119,16 @@ body {
 
 .pixel-pill #pixelpill #shine {
     color: var(--light-shade);
+}
+
+.social-link {
+    color: var(--light-accent);
+    text-decoration: none;
+    transition: color 0.25s ease
+}
+
+.social-link:hover {
+    color: var(--dark-accent);
 }
 
 
