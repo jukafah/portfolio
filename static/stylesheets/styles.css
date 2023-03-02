@@ -39,6 +39,9 @@ body {
 .light-accent {
     color: var(--light-accent);
 }
+.light-shade {
+    color: var(--light-shade);
+}
 .bg-light-shade {
     background-color: var(--light-shade);
 }
@@ -49,10 +52,8 @@ body {
     background-color: var(--dark-accent);
 }
 .bg-bubble {
-    background: url("../images/chat-bubble-1.svg") no-repeat;
-    height: 300px;
-    padding-top: 50px;
-    padding-left: 25px;
+    background: url("../images/chat-bubble-1.svg") no-repeat center;
+    background-size: contain;
 }
 
 .bars {
@@ -121,6 +122,13 @@ body {
     color: var(--light-shade);
 }
 
+.carousel-item {
+    height: 350px;
+}
+.quote {
+    max-width: 325px;
+}
+
 .social-link {
     color: var(--light-accent);
     text-decoration: none;
@@ -130,23 +138,6 @@ body {
 .social-link:hover {
     color: var(--dark-accent);
 }
-
-
-
-/*.pixel-pill {*/
-/*    background: url("../images/pixelpill.svg");*/
-/*    fill: lightgray;*/
-/*    color: lightgray;*/
-/*}*/
-
-/*.character-sheet {*/
-/*    background-image: url("../images/bg-parchment.svg");*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*}*/
-
-
 
 
 
