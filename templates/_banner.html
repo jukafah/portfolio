@@ -1,6 +1,6 @@
 <div class="container bg-accent">
       <div class="row">
-          <div class="col-sm text-center">
+          <div class="col-md order-2 order-md-1 text-center">
               <img class="rounded" src="{{ url_for('static', filename='images/pfp.png') }}" alt="Me">
               <div class="bars vstack gap-1 mx-auto text-start">
                   <div class="bar">
@@ -17,14 +17,16 @@
                   </div>
               </div>
           </div>
-          <div class="col-sm bg-bubble">
-              <!-- speech bubble graphic -->
-              <h3 class="main-brand">HELLO,</h3>
-              <h1>I AM <span class="main-brand">STEVE</span></h1>
-              <!-- some divider -->
-              <!-- maybe make this delete and write in new results -->
-              <h3 class="text-muted">Software Engineer</h3>
-              <!-- Hot Sauce Connoisseur - Web3 Enthusiast -->
+          <div class="col-md order-1 order-md-2">
+              <div class="salutation bg-bubble text-center">
+                  <div class="salutation-content d-inline-flex h-100">
+                      <div class="align-self-center mb-5">
+                          <h3 class="main-brand">HELLO,</h3>
+                          <h1>I AM <span class="main-brand">STEVE</span></h1>
+                          <h3 class="text-muted">Software Engineer</h3>
+                      </div>
+                  </div>
+              </div>
           </div>
       </div>
   </div>
