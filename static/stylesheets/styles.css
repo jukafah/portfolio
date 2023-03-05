@@ -90,17 +90,33 @@ body {
     transition: background-color 1s ease;
 }
 
-.tab-header {
-    color: var(--dark-accent);
+/*
+Change background image to vertical when collapse
+ */
+.bg-character-sheet {
+    background: url("../images/pixel-parchment.png") no-repeat center;
+    background-size: cover;
+}
+
+.character-sheet-header {
+    color: var(--main-brand);
     border-bottom: solid;
-    border-bottom-color: var(--dark-accent);
+    border-bottom-color: var(--main-brand);
     border-bottom-width: 2px;
     max-width: 175px;
     text-transform: uppercase;
 }
+.character-detail-content {
+    height: 500px;
+}
 
 .badge {
-    margin: 5px;
+    /* 1 */
+    /*background-color: var(--light-accent);*/
+    /*color: var(--dark-shade);*/
+    /* 2 */
+    background-color: var(--dark-shade);
+    color: var(--light-shade);
 }
 .text-bg-dark-accent {
     background-color: var(--dark-accent);
