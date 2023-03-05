@@ -94,11 +94,8 @@ body {
 Change background image to vertical when collapse
  */
 .bg-character-sheet {
+    background: url("../images/pixel-parchment.png") no-repeat center;
     background-size: cover;
-    background: var(--dark-accent) url("../images/pixel-scroll.svg") no-repeat center;
-    /*height: 1200px;*/
-    /*padding: 25px;*/
-
 }
 
 .character-sheet-header {

@@ -14,12 +14,14 @@
   {%  include '_navbar.html' %}
 
   <div class="bg-light-shade">
-      {%  include '_banner.html' %}
+      {% include '_banner.html' %}
       {% include '_intro.html' %}
-      {%  include '_work_history.html' %}
+      {% include '_work_history.html' %}
 
-      <div class="bg-dark-accent">
-          {% include '_character_sheet.html' %}
+      <div class="bg-dark-accent pt-5">
+          <div class="bg-character-sheet pt-5">
+              {% include '_character_sheet.html' %}
+          </div>
           {%  include '_quotes.html' %}
       </div>
 
