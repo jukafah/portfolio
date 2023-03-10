@@ -1,10 +1,14 @@
+import datetime
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
+START_DATE = datetime.datetime(2011, 7, 1)
+
 
 @app.route('/')
-def hello_world():  # put application's code here
+def index():
     return render_template("index.html")
 
 
