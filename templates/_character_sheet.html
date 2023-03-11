@@ -11,10 +11,10 @@
                   <p class="mb-0">Steve</p>
                   <p class="mb-0">Human Engineer</p>
                   <div class="pt-2">
-                      <p class="fs-3 mb-0 pb-0">Level 12</p>
+                      <p class="fs-3 mb-0 pb-0">Level {{ dynamic_life_experience.level }}</p>
                       <div class="mt-5">
                           <p class="text-small mb-0 pb-0 text-center">EXP TO NEXT LEVEL</p>
-                          <p class="text-center fs-4">364</p>
+                          <p class="text-center fs-4">{{ dynamic_life_experience.exp_to_next_level }}</p>
                       </div>
                   </div>
               </div>
@@ -22,15 +22,15 @@
           <div class="pb-2">
               <div class="hstack">
                   <span class="me-auto">Health</span>
-                  <span>572 / 572</span>
+                  <span>{{ dynamic_life_experience.health ~ ' / ' ~ dynamic_life_experience.health }}</span>
               </div>
               <div class="hstack">
                   <span class="me-auto">Energy</span>
-                  <span>200 / 200</span>
+                  <span>{{ dynamic_life_experience.energy ~ ' / ' ~ dynamic_life_experience.energy }}</span>
               </div>
               <div class="hstack">
                   <span class="me-auto">Exp</span>
-                  <span>4380</span>
+                  <span>{{ dynamic_life_experience.total_experience }}</span>
               </div>
           </div>
           <div class="pb-2">
