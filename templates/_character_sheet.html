@@ -81,59 +81,18 @@
           </ul>
           <div class="tab-content character-detail-content overflow-auto fs-5" id="pills-tabContent">
               <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
-                  <h4 class="character-sheet-header">Feats</h4>
-                  <p>Built complex data generation modules to seed ephemeral environments with production like data.</p>
-                  <p>Developed serverless data-processing lambdas.</p>
-                  <p>Engineered Continuous Deployment pipelines.</p>
-                  <p>Configured pipeline quality gates to ensure confidence in continuous deployment pipelines.</p>
-                  <p>Designed, deployed, and maintain web applications for small businesses.</p>
-                  <p>Reduced feedback loops from 3 days to 5 minutes.</p>
-                  <p>Lead effort to increase code coverage from 2% to over 80%.</p>
-                  <p>Standardized approaches to unit, integration, and end-to-end tests.</p>
-                  <p>Mentored and coached teams throughout the United States and internationally to develop technical and non-technical skills.</p>
-                  <p>Coordinated organizational technology adoption.</p>
-
-                  <div class="pb-3">
-                      <h4 class="character-sheet-header">Abilities</h4>
-                      <span class="badge rounded-pill">Front End Development</span>
-                      <span class="badge rounded-pill">Back End Development</span>
-                      <span class="badge rounded-pill">Quality Engineering</span>
-                      <span class="badge rounded-pill">Continuous Integration</span>
-                      <span class="badge rounded-pill">Continuous Deployment</span>
-                      <span class="badge rounded-pill">Continuous Testing</span>
-                      <span class="badge rounded-pill">Build Pipelines</span>
-                      <span class="badge rounded-pill">Peer Reviews</span>
-                      <span class="badge rounded-pill">Feature Design</span>
-                      <span class="badge rounded-pill">Behavior Driven Development</span>
-                      <span class="badge rounded-pill">Test Driven Development</span>
-                  </div>
-
-                  <div class="pb-3">
-                      <h4 class="character-sheet-header">Skills</h4>
-                      <span class="badge rounded-pill">Django</span>
-                      <span class="badge rounded-pill">Pytest</span>
-                      <span class="badge rounded-pill">Rails</span>
-                      <span class="badge rounded-pill">RSpec</span>
-                      <span class="badge rounded-pill">Cypress</span>
-                      <span class="badge rounded-pill">MongoDB</span>
-                      <span class="badge rounded-pill">React</span>
-                      <span class="badge rounded-pill">React Testing Library</span>
-                      <span class="badge rounded-pill">Leadership</span>
-                      <span class="badge rounded-pill">Communication</span>
-                      <span class="badge rounded-pill">Collaboration</span>
-                  </div>
-
-                  <div class="pb-3">
-                      <h4 class="character-sheet-header">Traits</h4>
-                      <span class="badge rounded-pill">Investigative</span>
-                      <span class="badge rounded-pill">Conventional</span>
-                      <span class="badge rounded-pill">Pragmatic</span>
-                      <span class="badge rounded-pill">Deliberate</span>
-                      <span class="badge rounded-pill">Autonomous</span>
-                      <span class="badge rounded-pill">Supporting</span>
-                      <span class="badge rounded-pill">Observant</span>
-                  </div>
-
+                  {% for key, values in character_stats.items() %}
+                      <h4 class="character-sheet-header">{{ key }}</h4>
+                      <div class="pb-3">
+                      {% for value in values.content %}
+                          {% if values.type == 'bullet' %}
+                              <p>{{ value }}</p>
+                          {% elif values.type == 'badge' %}
+                              <span class="badge rounded-pill mb-2">{{ value }}</span>
+                          {% endif %}
+                      {% endfor %}
+                      </div>
+                  {% endfor %}
               </div>
               <div class="tab-pane fade" id="pills-feats" role="tabpanel" aria-labelledby="pills-feats-tab" tabindex="0">
                   <h4 class="character-sheet-header">Feats</h4>
