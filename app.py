@@ -3,6 +3,8 @@ from collections import namedtuple
 
 from flask import Flask, render_template
 
+from constants import CHARACTER_STATS
+
 app = Flask(__name__)
 
 START_DATE = datetime.datetime(2011, 7, 1)
@@ -10,7 +12,11 @@ START_DATE = datetime.datetime(2011, 7, 1)
 
 @app.route('/')
 def index():
-    return render_template("index.html", dynamic_life_experience=get_dynamic_life_experience())
+    return render_template(
+        "index.html",
+        dynamic_life_experience=get_dynamic_life_experience(),
+        character_stats=get_character_stats(),
+    )
 
 
 def get_dynamic_life_experience():
@@ -27,6 +33,10 @@ def get_dynamic_life_experience():
         _get_energy(),
         _get_exp_to_next_level()
     )
+
+
+def get_character_stats():
+    return CHARACTER_STATS
 
 
 def _get_exp_to_next_level():
