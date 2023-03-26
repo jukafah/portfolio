@@ -15,7 +15,7 @@ def index():
     return render_template(
         "index.html",
         dynamic_life_experience=get_dynamic_life_experience(),
-        character_stats=CHARACTER_STATS,
+        character_stats=get_character_stats(),
     )
 
 
@@ -33,6 +33,10 @@ def get_dynamic_life_experience():
         _get_energy(),
         _get_exp_to_next_level()
     )
+
+
+def get_character_stats():
+    return CHARACTER_STATS
 
 
 def _get_exp_to_next_level():
