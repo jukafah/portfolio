@@ -1,11 +1,5 @@
 @font-face {
-    /*src: url("../fontpacks/upheavtt.ttf");*/
-
-
-    src: url("../fontpacks/Retro Gaming.ttf");
-    /*src: url("../fontpacks/alagard.ttf");*/
-
-    /*src: url("../fontpacks/04B_30__.ttf");*/
+    src: url("../fontpacks/RetroGaming.ttf");
     font-family: RetroGaming;
 }
 
